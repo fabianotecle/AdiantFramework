@@ -1,0 +1,36 @@
+@font-face {
+    font-family: AvenirLTStd85Heavy;
+    src: url("fonts/AvenirLTStd85Heavy.otf") format("opentype");
+}
+
+body {
+    font-family: AvenirLTStd85Heavy, Arial, serif, sans-serif;
+    background: url('../img/background.gif') top center;
+    background-size: cover;
+}
+
+#login-links a {
+    color:#FFF;
+}
+
+#login-links a:hover {
+    text-decoration: underline;
+}
+
+#login-links .green {
+    color: #F6BE7E;
+}
+
+#login-links .orange {
+    color: #F6BE7E;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 300px;
+    max-width: 90%;
+    margin:30px auto 40px;
+}
