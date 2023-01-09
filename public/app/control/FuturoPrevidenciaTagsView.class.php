@@ -23,11 +23,11 @@ class FuturoPrevidenciaTagsView extends TStandardList
     {
         parent::__construct();
         
-        parent::setDatabase('futuro_previdencia');    // defines the database
-        parent::setActiveRecord('FuturoPrevidenciaTag');    // defines the active record
-        parent::setDefaultOrder('id_tag', 'desc');        // defines the default order
-        parent::addFilterField('id_tag', '=', 'id_tag');      // filterField, operator, formField
-        parent::addFilterField('tag', 'like', 'tag'); // filterField, operator, formField
+        parent::setDatabase('futuro_previdencia');       // defines the database
+        parent::setActiveRecord('FuturoPrevidenciaTag'); // defines the active record
+        parent::setDefaultOrder('id_tag', 'desc');       // defines the default order
+        parent::addFilterField('id_tag', '=', 'id_tag'); // filterField, operator, formField
+        parent::addFilterField('tag', 'like', 'tag');    // filterField, operator, formField
         
         $this->form = new BootstrapFormBuilder('tag_list_form');
         $this->form->setFormTitle("Tags");
